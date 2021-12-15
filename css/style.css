@@ -1,0 +1,39 @@
+p{
+    padding-left: 3px;
+    font-size: 20px;
+}
+.cross{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+br{
+    display: block; 
+    content: "";
+    margin-bottom: 15px;
+}
+.lb{
+    font-family: URW Chancery L, cursive;
+}
+#check{
+    display: none;
+}
+#check + span{
+    width: 30px;    
+    height: 30px;
+    border: 2px solid #6600ff; 
+    border-radius: 7px;
+}
+#check + span:before{
+    content:'\2714';
+    padding: 0 2px;
+    opacity: 0;
+    color: #3399cc;
+    transition: 0.1s ease-in-out;
+}
+#check:checked + span:before{
+    color: #cc3366;
+    opacity: 1;
+}
